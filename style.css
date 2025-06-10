@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to bottom, #2c003e, #550066, #ff4ecf);
+    color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 40px;
+    background-image: url('fundo4.jpg'); /* fundo com estrelas */  
+    background-size: cover;
+    background-position: center;
+}
+
+.painel {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 2px solid #ff80ff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ff4ecf;
+
+}
+
+.painel h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffccff;
+
+}
+
+.painel p {
+    font-size: 1em;
+    color: #ddd;
+}
+
+.experimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-fechada {
+    width: 220px;
+    height: 220px;
+    background: #222;
+    border: 4px groove #ff00ff;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 0 30px #ff00ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-fechada button {
+    padding: 10px 20px;
+    background-color: #ff4ecf;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px white;
+    transition: transform 0.2s;
+}
+
+.caixa-fechada button:hover {
+    transform: scale(1.1);
+}
+
+.resultado {
+    margin-top: 30px;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
